@@ -1,0 +1,10 @@
+{
+  "name": "dulinan",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "morris": "^0.1.4"
+  }
+}

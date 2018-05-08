@@ -1,0 +1,27 @@
+{
+  "name": "dulinan",
+  "homepage": "https://github.com/jimmyfish/laravel_play",
+  "authors": [
+    "Dito Laksono YP <killcoder212@gmail.com>"
+  ],
+  "description": "nothing just to play with",
+  "main": "",
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "morris.js": "morrisjs#^0.5.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "jquery-slimscroll": "^1.3.8",
+    "sticky-kit": "^1.1.2",
+    "jquery.sparkline": "sparkline#^2.1.2",
+    "raphael": "^2.2.7"
+  }
+}
