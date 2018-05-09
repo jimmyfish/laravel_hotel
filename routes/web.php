@@ -18,3 +18,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::middleware(['auth'])->group(function () {
+
+    Route::prefix('room')->group(function () {
+        Route::match(['get', 'post'], '/create', 'Room\CreateController@index');
+
+        Route::get('/', 'Room\ListController@index');
+    });
+
+});
+
+Route::get('/locale/{locale}', 'LocaleController@index')->where(['locale' => "[a-z]{0,2}"]);
