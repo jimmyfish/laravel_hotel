@@ -9,7 +9,7 @@
 
 <div class="row page-titles" style="background:url({{ asset('images/background/user-bg.jpg') }}) no-repeat center top">
     <div class="col-lg-12 text-center">
-        <h1 class="m-t-30">Jimmy Fish</h1>
+    <h1 class="m-t-30">{{ Auth::user()->name }}</h1>
         <h5 class="text-muted m-b-30"><i class="ti-pin"></i> Malang, ID</h5>
     </div>
 </div>

@@ -18,10 +18,12 @@
     <link href="{{ asset('plugins/chartist-js/dist/chartist-init.css') }}" rel="stylesheet">
     <link href="{{ asset('plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css') }}" rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
     <!-- Custom CSS -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <!-- You can change the theme colors from here -->
-    <link href="{{ asset('css/colors/blue.css') }}" id="theme" rel="stylesheet">
+    <link href="{{ asset('css/colors/purple.css') }}" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -92,7 +94,7 @@
                                     <li role="separator" class="divider"></li>
                                     <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                <li><a href="{{ route('logout') }}"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -113,26 +115,9 @@
                     <!-- User profile text-->
                     <div class="profile-text">
                         <h5>{{ Auth::user()->name }}</h5>
-                        <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
+                        <a href="{{ route('app_hotel_setting') }}" class="" data-toggle="tooltip" title="Setting"><i class="mdi mdi-settings"></i></a>
                         <a href="app-email.html" class="" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
-                        <a href="pages-login.html" class="" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
-                        <div class="dropdown-menu animated flipInY">
-                            <!-- text-->
-                            <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
-                            <!-- text-->
-                            <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
-                            <!-- text-->
-                            <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
-                            <!-- text-->
-                            <div class="dropdown-divider"></div>
-                            <!-- text-->
-                            <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
-                            <!-- text-->
-                            <div class="dropdown-divider"></div>
-                            <!-- text-->
-                            <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
-                            <!-- text-->
-                        </div>
+                        <a href="{{ route('logout') }}" class="" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
                     </div>
                 </div>
                 <!-- End User profile text-->
@@ -189,6 +174,7 @@
 
     <script src="{{ asset('plugins/bootstrap/js/popper.min.js') }}"></script>
     <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
     <script src="{{ asset('js/jquery.slimscroll.js') }}"></script>
 
@@ -211,6 +197,8 @@
     <script src="{{ asset('js/dashboard3.js') }}"></script>
 
     <script src="{{ asset('plugins/styleswitcher/jQuery.style.switcher.js') }}"></script>
+
+    @yield('customJS')
 </body>
 
 </html>
