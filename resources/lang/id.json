@@ -1,3 +1,13 @@
 {
-    "Room Name": "Nama Kamar"
+    "Room Name": "Nama Kamar",
+    "List Room": "Daftar Kamar",
+    "Create Room": "Buat Kamar",
+    "Breakfast": "Sarapan",
+    "Room Number": "Nomor Kamar",
+    "Floor": "Lantai",
+    "Bed Count": "Jumlah Ranjang",
+    "Available": "Tersedia",
+    "Price": "Harga",
+    "Yes": "Ya",
+    "No": "Tidak"
 }

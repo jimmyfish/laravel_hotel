@@ -12,6 +12,8 @@ class ListController extends Controller
     {
         $room = Room::all();
 
-        return dd($room);
+        return view('room.list', [
+            'room' => $room,
+        ]);
     }
 }

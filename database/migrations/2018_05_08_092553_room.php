@@ -15,7 +15,7 @@ class Room extends Migration
     {
         Schema::create('room', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('identifier', 25)->nullable(false);
+            $table->string('identifier', 25)->nullable(false)->unique();
             $table->string('type');
             $table->integer('bed_count');
             $table->boolean('breakfast');
