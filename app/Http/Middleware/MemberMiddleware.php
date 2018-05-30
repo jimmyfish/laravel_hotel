@@ -3,8 +3,9 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Symfony\Component\HttpFoundation\Response;
 
-class GuestMiddleware
+class MemberMiddleware
 {
     /**
      * Handle an incoming request.

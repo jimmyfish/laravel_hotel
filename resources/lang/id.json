@@ -1,13 +1,13 @@
 {
-    "Room Name": "Nama Kamar",
-    "List Room": "Daftar Kamar",
-    "Create Room": "Buat Kamar",
-    "Breakfast": "Sarapan",
-    "Room Number": "Nomor Kamar",
-    "Floor": "Lantai",
-    "Bed Count": "Jumlah Ranjang",
-    "Available": "Tersedia",
-    "Price": "Harga",
+    "room_name": "Nama Kamar",
+    "list_room": "Daftar Kamar",
+    "create_room": "Buat Kamar",
+    "breakfast": "Sarapan",
+    "room_number": "Nomor Kamar",
+    "floor": "Lantai",
+    "bed_count": "Jumlah Ranjang",
+    "available": "Tersedia",
+    "price": "Harga",
     "Yes": "Ya",
     "No": "Tidak"
 }

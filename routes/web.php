@@ -26,6 +26,11 @@ Route::middleware(['auth'])->group(function () {
             
         });
 
+        Route::prefix('customer')->group(function () {
+            Route::match(['get', 'post'], '/create', 'Admin\BookingController@index')
+                ->name('customer_create');
+        });
+
     });
 
     # SUPER ADMIN ONLY
